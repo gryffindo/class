@@ -1,5 +1,5 @@
 (async () => {
-  const data = await fetch("/data.json").then((r) => r.json());
+  const data = await fetch("./data.json").then((r) => r.json());
 
   document.querySelector(".cont").innerHTML = data
     .map(
