@@ -23,5 +23,5 @@ p {
 .button:hover {
 	background-color: #ed5565;
 	color: #111;
-	transition: .4sn ease all;
+	transition: .4s all;
 }
