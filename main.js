@@ -1,13 +1,11 @@
 (async () => {
-  const data = await fetch("./data.json").then((r) => r.json());
 
-  document.querySelector(".cont").innerHTML = data
-    .map(
-      ({ href, text }) => `
+  const data = await fetch("data.json").then((r) => r.json());
 
-    <a class="button" href="${href}">${text}</a></br>
+  document.querySelector(".cont").innerHTML = data.map(({ href, text }) => `
 
-  `
-    )
-    .join("");
+    <a class="button" href="${href}">${text}</a><br/>
+
+  `).join("");
+
 })();
